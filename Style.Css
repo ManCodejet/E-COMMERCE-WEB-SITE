@@ -1,48 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
 
-
-
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
-.ad_bar{
-    width: 100vw;
-    height: 2.5rem;
-    background-color: black;
 
+.container {
+    width: 100%;
+    height: 100%;
 }
-header{
-    width: 100vw;
+
+/* Ad bar styles */
+.ad_bar {
+    width: 100%;
     height: 3rem;
-    background-color: rgb(110, 110, 110);
-    align-items: center;
+    background: lightblue;
 }
-header nav{
+
+header {
+    height: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header .logo_box {
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 0%;
-    /*align-items: center;*/
-    
-
+    align-items: center;
 }
-.logo_box{
-    display: flex;
-    height: 5rem;
+
+header .logo_box section {
+    width: 15rem;
+}
+
+header .logo_box section a img {
     width: 4rem;
 }
-div.logo_box nav div{
-    display: flex;
-    height: 2.5rem;
-    padding-left: 1rem;
 
+header .logo_box .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
-div.logo_box section img{
-    /* height: 4rem; */
-    width: 4rem;
+
+header .logo_box .links div {
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    color: grey;
+    cursor: pointer;
+    transition: .2s ease;
 }
-#chatUs{
-    color: red;
+
+header .logo_box .links div:hover {
+    background: rgb(0, 89, 255);
+    border: none;
+    color: white;
 }
-.nav{
+
+header .logo_box .links div:hover button {
+    color: white;
+}
+
+header .logo_box .search-bar-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
     margin-right: 5rem;
+}
+
+header .logo_box .search-bar-wrapper i {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: grid;
+    place-items: Center;
+    transition: .2s ease;
+}
+
+header .logo_box .search-bar-wrapper i:hover {
+    background: rgb(0, 89, 255);
+    color: white;
+}
+
+header .logo_box .search_bar {
+    width: 100%;
+    height: 3rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    background: rgb(235, 235, 235);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid grey;
+} 
+
+header .logo_box .links div button {
+    background: none;
+    border: none;
+    outline: none;
+    color: grey;
 }
