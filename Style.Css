@@ -1,0 +1,48 @@
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.ad_bar{
+    width: 100vw;
+    height: 2.5rem;
+    background-color: black;
+
+}
+header{
+    width: 100vw;
+    height: 3rem;
+    background-color: rgb(110, 110, 110);
+    align-items: center;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0%;
+    /*align-items: center;*/
+    
+
+}
+.logo_box{
+    display: flex;
+    height: 5rem;
+    width: 4rem;
+}
+div.logo_box nav div{
+    display: flex;
+    height: 2.5rem;
+    padding-left: 1rem;
+
+}
+div.logo_box section img{
+    /* height: 4rem; */
+    width: 4rem;
+}
+#chatUs{
+    color: red;
+}
+.nav{
+    margin-right: 5rem;
+}
