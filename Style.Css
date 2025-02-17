@@ -128,6 +128,7 @@ header .logo_box .links div button {
     display: flex;
     margin: 0 12rem;
     gap: 5px;
+    margin-bottom: 1.5rem;
 }
 
 .home .categories {
@@ -227,3 +228,61 @@ header .logo_box .links div button {
 }
 
 /* gif ads end  */
+/************ Home section ends  **************/
+
+
+/******** Flash sale section starts here  ***********/
+.flash-sales {
+    height: fit-content; 
+    margin: 0 12rem;
+}
+
+.flash-sales .flash-sale-heading {
+    width: 100%;
+    height: 3rem;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    padding: 0 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.flash-sales .products-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flash-sales .products-list .product {
+    background: rgb(229, 229, 229);
+    width: 13rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-top: .5rem;
+    transition: .2s ease;
+}
+.flash-sales .products-list .product:hover {
+    background: rgb(61, 61, 61);
+    cursor: pointer;
+    color: white;
+}
+
+.flash-sales .products-list .product img {
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flash-sales .products-list .product .texts {
+    padding: .5rem;
+}
+
