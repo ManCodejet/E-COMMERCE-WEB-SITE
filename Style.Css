@@ -117,3 +117,113 @@ header .logo_box .links div button {
     outline: none;
     color: grey;
 }
+
+
+/********** Home section styles  **********/
+/* categories starts  */
+
+.home {
+    height: 25rem;
+    /* background: rgb(240, 240, 240); */
+    display: flex;
+    margin: 0 12rem;
+    gap: 5px;
+}
+
+.home .categories {
+    width: 12rem;
+    height: 100%;
+    background: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+.home .categories:hover {
+    border: 1px solid lightgrey;
+}
+
+.home .categories ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home .categories ul li {
+    width: 100%;
+    padding: 6px 0 6px 10px;
+    border-radius: 5px;
+}
+
+.home .categories ul li:hover {
+    background: rgb(235, 235, 235);
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.home .categories ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+/* Category ends  */
+
+/* Ad video starts  */
+.ad-video {
+    width: 45rem;
+    height: 100%;
+    background: yellow;
+}
+
+.ad-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ad video ends  */
+
+/* gif ads start  */
+.ads {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ads > div {
+    width: 12rem;
+    height: 12rem;
+    background: rgb(191, 191, 191);
+    padding: 15px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ads .contacts .call-to-order {
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ads .contacts .call-to-order i {
+    font-size: 20px;
+    background: orange;
+    padding: 8px;
+    border-radius: 100%;
+    color: white;
+}
+
+.ads .contacts span p:first-of-type{
+    font-weight: 900;
+    color: white;
+}
+.ads .contacts span p:last-of-type{
+    font-size: 13px;
+    color: white;
+}
+
+/* gif ads end  */
