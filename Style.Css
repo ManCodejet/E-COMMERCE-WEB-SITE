@@ -129,6 +129,7 @@ header .logo_box .links div button {
     margin: 0 12rem;
     gap: 5px;
     margin-bottom: 1.5rem;
+    justify-content: space-between;
 }
 
 .home .categories {
@@ -218,6 +219,10 @@ header .logo_box .links div button {
     color: white;
 }
 
+.ads .gif-ad {
+    padding: 0;
+}
+
 .ads .contacts span p:first-of-type{
     font-weight: 900;
     color: white;
@@ -286,3 +291,39 @@ header .logo_box .links div button {
     padding: .5rem;
 }
 
+/************ Flash sales ends here  *******/
+
+/* Footer starts here  */
+.footer {
+    background-color: #f4f4f4;
+    color: #555;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #333;
+}
