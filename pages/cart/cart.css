@@ -1,3 +1,75 @@
+.humburger-icon {
+    margin-right: 2rem;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 50%;
+    color: grey;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.humburger-icon:hover {
+    background: rgb(233, 233, 233);
+}
+.humburger-icon:hover .categories {
+    display: block;
+}
+
+.humburger-icon {
+    position: relative;
+}
+
+.humburger-icon .categories {
+    width: 12rem;
+    height: fit-content;
+    background: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: .2s ease;
+    position: absolute;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 3;
+    top: 2.5rem;
+    left: 0rem;
+    display: none;
+
+}
+
+.humburger-icon .categories:hover {
+    border: 1px solid lightgrey;
+}
+
+.humburger-icon .categories ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.humburger-icon .categories ul li {
+    width: 100%;
+    padding: 6px 0 6px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.humburger-icon .categories ul li:hover {
+    background: rgb(235, 235, 235);
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.humburger-icon .categories ul li a {
+    color: grey;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: 400;
+}
+
+/* Category ends  */
+
+
+
 .cart-list {
     height: fit-content; 
     margin: 0 12rem;
