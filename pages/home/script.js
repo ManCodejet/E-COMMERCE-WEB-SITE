@@ -30,3 +30,11 @@ async function getProducts() {
     }
 }
 getProducts();
+
+
+function checkProductId() {
+    const currentProducts = document.querySelector('.products-list').addEventListener('click', (e) => {
+        window.location.href = "/pages/product-details/details.html"
+    })
+}
+checkProductId();
