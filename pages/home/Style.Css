@@ -168,7 +168,9 @@ header .logo_box .links div button {
     color: grey;
     text-decoration: none;
 }
-
+.home .categories ul li a:hover{
+    color: orangered;
+}
 /* Category ends  */
 
 /* Ad video starts  */
