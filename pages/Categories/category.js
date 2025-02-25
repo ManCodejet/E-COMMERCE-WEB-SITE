@@ -1,11 +1,14 @@
 const BaseUrl = 'https://fakestoreapi.com';
 
-async function getProducts() {
-    try {
-        const response = await fetch(`${BaseUrl}/products`);
-        const products = await response.json();
+const categoryName = localStorage.getItem("selectedCategory").toLowerCase();
 
-        const productList = document.querySelector('.products-list');
+async function getCategoryDetails() {
+    try {
+        const response = await fetch(`${BaseUrl}/products/category/${categoryName}`);
+        const products = await response.json();
+        console.log(products)
+
+        const productList = document.querySelector('.product-list');
         productList.innerHTML = '';
 
         products.slice(0, -1).forEach(product => {
@@ -29,24 +32,4 @@ async function getProducts() {
         console.error('Error:', error);
     }
 }
-getProducts();
-
-
-function checkProductId() {
-    const currentProducts = document.querySelector('.products-list').addEventListener('click', (e) => {
-        window.location.href = "/pages/product-details/details.html"
-    })
-}
-checkProductId();
-
-export function getCategoryName() {
-    const category = document.querySelector('.categories');
-
-    if (!category) return;
-
-    category.addEventListener('click', (e) => {
-        const categoryName = e.target.textContent.trim();
-        localStorage.setItem('selectedCategory', categoryName)
-    });
-}
-getCategoryName()
+getCategoryDetails();

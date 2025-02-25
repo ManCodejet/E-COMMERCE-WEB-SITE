@@ -134,31 +134,31 @@ header .logo_box .links div button {
 
 .home .categories {
     width: 12rem;
+    min-width: 12rem;
     height: 100%;
-    background: white;
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 4px;
     transition: .2s ease;
-}
-.home .categories:hover {
-    border: 1px solid lightgrey;
-}
-
-.home .categories ul {
-    height: 100%;
+    background: rgb(247, 247, 247);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.home .categories ul li {
+.home .categories a {
     width: 100%;
-    padding: 6px 0 6px 10px;
-    border-radius: 5px;
+    padding: .5rem .4rem;
+    text-decoration: none;
+    color: grey; 
+    border-radius: 8px;
+}
+.home .categories:hover {
+    border: 1px solid lightgrey;
 }
 
-.home .categories ul li:hover {
+
+.home .categories a:hover {
     background: rgb(235, 235, 235);
     cursor: pointer;
     transition: .1s ease;
