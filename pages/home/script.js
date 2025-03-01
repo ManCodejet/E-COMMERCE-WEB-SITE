@@ -13,7 +13,7 @@ async function getProducts() {
             productDiv.classList.add('product');
 
             productDiv.innerHTML = `
-                <img src="${product.image}" alt="${product.title}">
+                <img src="${product.image}" alt="${product.title}" id="${product.id}">
                 <div class="texts">
                     <p>${product.title}</p>
                     <p>GH$ ${product.price}</p>
@@ -21,6 +21,7 @@ async function getProducts() {
                     <p>${Math.floor(Math.random() * 20) + 1} items left</p>
                 </div>
             `;
+            productDiv.addEventListener('click', () => checkProductId(product.id))
 
             productList.appendChild(productDiv);
         });
@@ -32,14 +33,13 @@ async function getProducts() {
 getProducts();
 
 
-function checkProductId() {
-    const currentProducts = document.querySelector('.products-list').addEventListener('click', (e) => {
-        window.location.href = "/pages/product-details/details.html"
-    })
+function checkProductId(id) {
+    localStorage.setItem('productId', id)
+    window.location.href = "/pages/product-details/details.html"
 }
-checkProductId();
 
-export function getCategoryName() {
+
+function getCategoryName() {
     const category = document.querySelector('.categories');
 
     if (!category) return;
